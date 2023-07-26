@@ -1,0 +1,15 @@
+<template>
+    <template lwc:if={birds.data}>
+        <template for:each={birds.data} for:item="bird">
+            <li key={bird.Id}>
+                {bird.Name}
+            </li>
+        </template>
+    </template>
+
+    <input type="text" class="bird-name">
+    <button onclick={newBird}>New Bird</button>
+
+    <p>Status is: {status}</p>
+
+</template>
