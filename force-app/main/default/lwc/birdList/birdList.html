@@ -1,15 +1,23 @@
 <template>
-    <template lwc:if={birds.data}>
-        <template for:each={birds.data} for:item="bird">
-            <li key={bird.Id}>
-                {bird.Name}
-            </li>
-        </template>
-    </template>
-
-    <input type="text" class="bird-name">
-    <button onclick={newBird}>New Bird</button>
-
-    <p>Status is: {status}</p>
+    <div class="container">
+        <div class="col">
+            <label for="bird-name">Bird Name</label>
+            <input type="text" class="bird-name" name="bird-name">
+            
+            <button onclick={newBird}>Create New Bird</button>
+    
+            <p>Status is: {status}</p>
+        </div>
+        <div class="col">
+            <h2>Current Bird List:</h2>
+            <template lwc:if={birds.data}>
+                <template for:each={birds.data} for:item="bird">
+                    <li key={bird.Id}>
+                        {bird.Name}
+                    </li>
+                </template>
+            </template>
+        </div>
+    </div>
 
 </template>

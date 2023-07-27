@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    margin: 0 35px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+li {
+    list-style-type: none;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+}
+button {
+    margin-top: 10px;
+    display: block;
+    padding: 5px;
+}
+
+p {
+    margin-top: 20px;
+}
